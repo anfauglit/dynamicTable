@@ -1,0 +1,38 @@
+body {
+	font: small georgia, serif;
+}
+table {
+	border: 3px solid blue;
+	text-align: center;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+	
+th, td {
+	border: 1px solid black;
+	font-weight: bold;
+	padding: 3px;
+	width: 30px;
+}
+
+th.invis {
+	padding: 0px;
+	border: none;
+}
+td {
+	color: blue;
+	height: 30px;
+}
+.normal {
+	color: blue;
+}
+.focused {
+	color: red;
+}
+
+#note {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size: 1.2em;
+}

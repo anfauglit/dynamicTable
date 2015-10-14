@@ -3,81 +3,35 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Rank converter</title>
-		<style>
-		body {
-			fond: small sans-serif;
-		}
-		table {
-			border: 3px solid blue;
-			text-align: center;
-			border-collapse: collapse;
-		}
-			
-		th, td {
-			border: 1px solid black;
-			font-weight: bold;
-			padding: 3px;
-			width: 30px;
-		}
-		
-		th {
-			border-top: 3px blue solid;
-		}
-		
-		th.invis {
-			padding: 0px;
-			border: none;
-		}
-		td {
-			color: blue;
-			height: 30px;
-		}
-		.normal {
-			color: blue;
-		}
-		.focused {
-			color: red;
-		}
-		
-		</style>
-		<script src="code.js">
-		</script>
+		<link type="text/css" rel="stylesheet" href="table.css">
+		<script src="code.js"></script>
 	</head>
 	
 	<body>
+	<div id="note">
+	</div>
 	<section id="main">
 		<table>
-			<tr>
-			<tr>
-				<th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th>
-				<th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th>
-			</tr>
-				<th colspan="3">Trillions</th><th colspan="3">Billions</th><th colspan="3">Millions</th>
-				<th colspan="3">Thousands</th><th colspan="3">Класс единиц</th>
-			</tr>
-			<tr>
-				<th>сот.</th><th>дес.</th><th>ед.</th><th>сот.</th><th>дес.</th><th>ед.</th><th>сот.</th><th>дес.</th><th>ед.</th>
-				<th>сот.</th><th>дес.</th><th>ед.</th><th>сот.</th><th>дес.</th><th>ед.</th>
-			</tr>
-			<tr>
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-			</tr>
-			<tr>
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-			</tr>
+			<tbody id="tableBody">
+				<tr>
+					<th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th>
+					<th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th><th class="invis"></th>
+				</tr>
+				<tr>
+					<th colspan="3">Trillions</th><th colspan="3">Billions</th><th colspan="3">Millions</th>
+					<th colspan="3">Thousands</th><th colspan="3">Класс единиц</th>
+				</tr>
+				<tr>
+					<th>сот.</th><th>дес.</th><th>ед.</th><th>сот.</th><th>дес.</th><th>ед.</th><th>сот.</th><th>дес.</th><th>ед.</th>
+					<th>сот.</th><th>дес.</th><th>ед.</th><th>сот.</th><th>дес.</th><th>ед.</th>
+				</tr>
+			</tbody>
 		</table>
-		<p id="coords">
-		</p>
+		<form>
+			<input type="text" id="inputNumber">
+			<input type="button" value="Parse the number" id="buttonAdd">
+			<input type="button" value="Erase data" id="buttonErase">
+		</form>
 	</section>
 	</body>
 </html>
